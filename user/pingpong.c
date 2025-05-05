@@ -13,6 +13,7 @@ int main (int argc, char **argv){
     if (pid < 0){
         //fork失败
         fprintf(2, "fork failed\n");
+        
         exit(1);
     }
     else if(pid == 0){
@@ -42,4 +43,6 @@ int main (int argc, char **argv){
 
         exit(0);
     }
+
+
 }
